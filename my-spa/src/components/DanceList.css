@@ -1,0 +1,36 @@
+.dance-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.dance-item {
+    background: #f9f9f9;
+    border-radius: 4px;
+    padding: 4px;
+    text-align: center;
+    color: black;
+    transition: transform 0.2s;
+ 
+    font-size: 12px;
+
+    max-width: 740px;
+
+}
+
+.dance-image {
+    width: 280px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+.dance-item:hover .dance-image {
+    transform: scale(1.1);
+}
+
+.dance-item:hover {
+    transform: scale(1.01);
+}
